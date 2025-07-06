@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+:root {
+  --white: #FFFFFF;
+  --primary: #E6533C;
+  --secondary: #222222;
+  --backten: #191919;
+
+  /* Text */
+
+  --textprimary: #808080;
+  --textsecondary: #afafaf;
+  
+}
+
+body{
+    background-color: #000000;
+}
+
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+
+#header-section{
+    background-image: linear-gradient(#111111fa, #77777717);
+    padding: 60px 0;
+}
+
+
+
+
+/* Nav Styles */
+
+
+.nav-style{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo{
+    color: beige;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+
+
+.menu-ul{
+    display: flex;
+    gap: 40px;
+    
+    
+}
+
+.menus{
+    padding: 10px;
+    border: 1px solid var(--backten);
+    border-radius: 50px;
+}
+
+.menu-list{
+    list-style: none;
+    margin: 15px;
+    
+}
+.menu-list a{
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.menu-list a:hover{
+    background-color: #E6533C;
+   
+}
+
+
+
+
+
+
+/*  Responsive Part */
+
+
+@media screen and (max-width: 576px)  {
+    .nav-main{
+        display: none;
+    }
+}
+
+
+/*  For tablet */
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+    .nav-style{
+        flex-direction: column;
+        gap: 40px;
+    }   
+}
