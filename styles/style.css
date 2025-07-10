@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,31 +11,33 @@
 }
 
 :root {
-  --white: #FFFFFF;
-  --primary: #E6533C;
-  --secondary: #222222;
-  --backten: #191919;
+    --white: #FFFFFF;
+    --primary: #E6533C;
+    --secondary: #222222;
+    --backten: #191919;
 
-  /* Text */
+    /* Text */
 
-  --textprimary: #808080;
-  --textsecondary: #afafaf;
-  
+    --textprimary: #808080;
+    --textsecondary: #afafaf;
+
 }
 
-body{
+body {
     background-color: #000000;
 }
 
-.container{
+.container {
     max-width: 1060px;
     margin: 0 auto;
 }
 
 
-#header-section{
-    background-image: linear-gradient(#111111fa, #77777717);
-    padding: 60px 0;
+#header-section {
+    background-image: linear-gradient(#000000, #3630308c, #000000);
+
+
+
 }
 
 
@@ -44,14 +45,18 @@ body{
 
 /* Nav Styles */
 
+.nav-main {
+    padding-top: 50px;
+}
 
-.nav-style{
+.nav-style {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     color: beige;
     font-size: 2.5rem;
     font-style: italic;
@@ -61,25 +66,26 @@ body{
 
 
 
-.menu-ul{
+.menu-ul {
     display: flex;
     gap: 40px;
-    
-    
+
+
 }
 
-.menus{
+.menus {
     padding: 10px;
     border: 1px solid var(--backten);
     border-radius: 50px;
 }
 
-.menu-list{
+.menu-list {
     list-style: none;
     margin: 15px;
-    
+
 }
-.menu-list a{
+
+.menu-list a {
     background-color: transparent;
     border-radius: 50px;
     padding: 20px;
@@ -89,12 +95,159 @@ body{
     font-weight: 600;
 }
 
-.menu-list a:hover{
+.menu-list a:hover {
     background-color: #E6533C;
-   
+
+}
+
+/* Hero */
+
+.hero-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.hero-bg {
+
+    padding-top: 100px;
+}
+
+.hero-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
 }
 
 
+
+.hero-h1 {
+    font-size: 4.875rem;
+    font-weight: 900;
+}
+
+.hero-p {
+    color: var(--textsecondary);
+    padding: 20px 0;
+}
+
+.shape {
+    line-height: 0%;
+    font-family: "Great Vibes", cursive;
+    font-size: 9rem;
+    font-weight: 100;
+}
+
+
+
+.hero-btn-area {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.hero-btn {
+    padding: 16px 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero-btn-second {
+    padding: 16px 40px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/*  Mini Cards */
+.mini-cards {
+    width: 50%;
+}
+
+/* card one */
+
+.card-one {
+    position: relative;
+    display: flex;
+    width: 180px;
+    height: 90px;
+    border-radius: 10px;
+    top: 220px;
+    left: 230px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+.card-one-text {
+    margin: 0 auto;
+    align-content: center;
+}
+
+.card-one-text h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--white);
+
+}
+
+.card-one-text p {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: var(--textsecondary);
+
+}
+
+/* card two */
+
+
+.card-ball {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.card-two {
+    position: relative;
+    top: -170px;
+    left: -70px;
+    width: 180px;
+    height: 90px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    align-content: center;
+}
+
+.card-two-div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-two-text h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.card-two-text p {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: var(--textsecondary);
+
+}
 
 
 
@@ -102,18 +255,151 @@ body{
 /*  Responsive Part */
 
 
-@media screen and (max-width: 576px)  {
-    .nav-main{
+@media screen and (max-width: 576px) {
+    .nav-main {
         display: none;
     }
+
+    /* Hero Sectiom  */
+
+    .hero-contents {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding: 0 30px;
+        width: 100%;
+    }
+
+
+    /* Hero Text */
+
+    .hero-h1 {
+        font-size: 2.875rem;
+        font-weight: 700;
+    }
+
+    .hero-p {
+        color: var(--textsecondary);
+        padding: 20px 0;
+    }
+
+    .shape {
+        line-height: 0%;
+        font-family: "Great Vibes", cursive;
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    /* cards */
+
+    .mini-cards {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-one {
+        position: relative;
+        display: flex;
+        width: 180px;
+        height: 90px;
+        border-radius: 10px;
+        top: 110px;
+        left: 225px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+    }
+
+    .card-two {
+        position: relative;
+        top: -330px;
+        left: 30px;
+        width: 180px;
+        height: 90px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        align-content: center;
+    }
+
 }
 
 
 /*  For tablet */
 
 @media screen and (max-width: 992px) and (min-width: 577px) {
-    .nav-style{
+    .nav-style {
         flex-direction: column;
         gap: 40px;
-    }   
+    }
+
+
+
+
+    /* Hero Sectiom  */
+
+    .hero-contents {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding: 0 10px;
+    }
+
+    /* Hero Text */
+
+    .hero-h1 {
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+
+    /* hero card */
+
+    .hero-text {
+
+        width: 100%;
+        margin-top: 80px;
+        padding: 0 60px;
+    }
+
+    .mini-cards {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-one {
+        position: relative;
+        display: flex;
+        width: 180px;
+        height: 90px;
+        border-radius: 10px;
+        top: 140px;
+        left: 405px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+    }
+
+
+    .card-two {
+        position: relative;
+        top: -230px;
+        left: 165px;
+        width: 180px;
+        height: 90px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        align-content: center;
+    }
+
 }
