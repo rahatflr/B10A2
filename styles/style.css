@@ -375,23 +375,281 @@ body {
 
 /*  Training Section */
 
-.tarining-heading{
+.tarining-heading {
     text-align: left;
 }
-.tarining-heading h2{
+
+.tarining-heading h2 {
     font-size: 3rem;
     font-weight: 900;
     color: var(--white);
     padding-bottom: 20px;
-    
+
 }
-.tarining-heading p{
+
+.tarining-heading p {
     font-size: 0.875rem;
     color: var(--textprimary);
     padding-bottom: 20px;
     padding-right: 200px;
-    
+
 }
+
+
+/* training images */
+
+
+.training-img-row-one {
+    display: flex;
+}
+
+.training-img-row-two {
+    display: flex;
+}
+
+
+
+
+
+/* back 1 */
+.back-one {
+    background-image: url(../images/exercise1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.overlay-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 255, 209, 0.384);
+    z-index: -1;
+
+}
+
+.back-one p {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+/*  Back two */
+
+.back-two {
+    background-image: url(../images/exercise2.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.overlay-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 6, 6, 0.301);
+    z-index: -1;
+
+}
+
+.back-two p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+/*  Back three */
+
+
+.back-three {
+    background-image: url(../images/exercise3.png);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.overlay-three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+    z-index: -1;
+
+}
+
+.back-three p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* back four */
+
+.back-four {
+    background-image: url(../images/exercise4.png);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.overlay-four {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    z-index: -1;
+
+}
+
+.back-four p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: end;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+/*  Back five */
+
+.back-five {
+    background-image: url(../images/exercise5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.overlay-five {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(180, 255, 6, 0.301);
+    z-index: -1;
+
+}
+
+.back-five p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+/*  Back six */
+
+
+.back-six {
+    background-image: url(../images/exercise6.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.overlay-six {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 81, 255, 0.301);
+    z-index: -1;
+
+}
+
+.back-six p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.125rem;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -806,6 +1064,10 @@ tr {
 @media screen and (max-width: 576px) {
 
 
+
+
+
+
     .responsive-padding {
         padding: 0 20px;
     }
@@ -1032,6 +1294,34 @@ tr {
         border-radius: 18px;
         transform: translate(0%, 0%);
     }
+
+
+
+    /* Training part */
+
+    .hide {
+        display: none;
+    }
+
+    .back-one {
+        width: 40%;
+    }
+
+    .back-two {
+        width: 60%;
+    }
+
+    .back-four {
+        width: 100%;
+    }
+
+    .back-five {
+        width: 100%;
+    }
+
+
+
+
 
     /* footer */
     .footer-main-div {
