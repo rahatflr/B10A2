@@ -27,6 +27,12 @@ body {
     background-color: #000000;
 }
 
+
+
+.paddi{
+    padding: 0 20px;
+}
+
 .container {
     max-width: 1060px;
     margin: 0 auto;
@@ -374,6 +380,12 @@ body {
 
 
 /*  Training Section */
+
+
+#Training{
+    padding: 80px 0;
+}
+
 
 .tarining-heading {
     text-align: left;
